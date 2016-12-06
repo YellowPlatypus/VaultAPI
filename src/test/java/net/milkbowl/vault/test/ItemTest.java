@@ -19,6 +19,31 @@ public class ItemTest {
     // Static list of materials we shouldn't be testing for as they are now longer able to be held in inventory.
     private static final Set<Material> ignoreMats = EnumSet.noneOf(Material.class);
     {
+        //1.11 this is actually 1.11 and 1.10 together, not really sure if this needs to be up to date, but whatever. Lots of things soft depend it.
+        ignoreMats.add(Material.MAGMA);
+        ignoreMats.add(Material.NETHER_WART_BLOCK);
+        ignoreMats.add(Material.RED_NETHER_BRICK);
+        ignoreMats.add(Material.BONE_BLOCK);
+        ignoreMats.add(Material.STRUCTURE_VOID);
+        ignoreMats.add(Material.OBSERVER);
+        ignoreMats.add(Material.WHITE_SHULKER_BOX);
+        ignoreMats.add(Material.ORANGE_SHULKER_BOX);
+        ignoreMats.add(Material.MAGENTA_SHULKER_BOX);
+        ignoreMats.add(Material.LIGHT_BLUE_SHULKER_BOX);
+        ignoreMats.add(Material.YELLOW_SHULKER_BOX);
+        ignoreMats.add(Material.LIME_SHULKER_BOX);
+        ignoreMats.add(Material.PINK_SHULKER_BOX);
+        ignoreMats.add(Material.GRAY_SHULKER_BOX);
+        ignoreMats.add(Material.SILVER_SHULKER_BOX);
+        ignoreMats.add(Material.CYAN_SHULKER_BOX);
+        ignoreMats.add(Material.PURPLE_SHULKER_BOX);
+        ignoreMats.add(Material.BLUE_SHULKER_BOX);
+        ignoreMats.add(Material.BROWN_SHULKER_BOX);
+        ignoreMats.add(Material.GREEN_SHULKER_BOX);
+        ignoreMats.add(Material.RED_SHULKER_BOX);
+        ignoreMats.add(Material.BLACK_SHULKER_BOX);
+        ignoreMats.add(Material.TOTEM);
+        ignoreMats.add(Material.SHULKER_SHELL);
         // 1.9
         ignoreMats.add(Material.GRASS_PATH);
         ignoreMats.add(Material.END_GATEWAY);

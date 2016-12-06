@@ -34,13 +34,6 @@
 		<url>https://github.com/MilkBowl/VaultAPI/issues</url>
 	</issueManagement>
 
-	<repositories>
-		<repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
-
 	<distributionManagement>
 		<repository>
 			<id>pub-repo</id>
@@ -50,12 +43,6 @@
 	</distributionManagement>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>${bukkitVersion}</version>
-			<type>jar</type>
-		</dependency>
 		<!-- Test Dependency -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -65,10 +52,16 @@
 			<scope>test</scope>
 			<optional>true</optional>
 		</dependency>
+	 <dependency>
+	  <groupId>Spigot1.11_R1</groupId>
+	  <artifactId>spigot</artifactId>
+	  <version>1.11_R1</version>
+	 </dependency>
 	</dependencies>
 
 	<build>
 		<defaultGoal>clean install</defaultGoal>
+                <finalName>${project.name}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
